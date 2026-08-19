@@ -1,0 +1,76 @@
+:root {
+  --bs-primary: #0d5c3e;
+  --bs-primary-rgb: 13, 92, 62;
+  --bs-secondary: #1a936f;
+  --bs-secondary-rgb: 26, 147, 111;
+  --bs-body-bg: #f0f7f4;
+  --bs-body-color: #1a2e24;
+  --emerald-accent: #f3a712;
+  --emerald-light-accent: #d4ece4;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-bg {
+  background: linear-gradient(135deg, #0d5c3e 0%, #1a936f 100%);
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+}
+
+.custom-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.stat-card {
+  border-left: 5px solid var(--bs-primary);
+}
+
+.card-header.bg-primary, .navbar.bg-primary {
+  background-color: #0d5c3e !important;
+}
+
+.btn-primary {
+  background-color: #0d5c3e;
+  border-color: #0d5c3e;
+}
+
+.btn-primary:hover {
+  background-color: #083b27;
+  border-color: #083b27;
+}
+
+.sidebar {
+  background-color: #ffffff !important;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .nav-link {
+  color: #1a2e24;
+  font-weight: 500;
+  border-radius: 8px;
+  margin-bottom: 4px;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link.active {
+  background-color: var(--emerald-light-accent);
+  color: #0d5c3e;
+}
+
+.accent-text {
+  color: var(--emerald-accent);
+}
